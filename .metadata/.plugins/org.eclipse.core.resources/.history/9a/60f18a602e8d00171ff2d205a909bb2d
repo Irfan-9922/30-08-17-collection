@@ -1,0 +1,23 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package com.Map;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * DATE:7:59:35 am
+ *TIME:30-Aug-2017
+ *TAGS:
+ */
+public class details {
+	//private prop prop;
+	private job job;
+	private land land;
+	private business b;
+	private incomesource income;
+	private vichel v;
+	
+	
+
+}

@@ -1,0 +1,80 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package com.Map;
+
+import java.util.Date;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * DATE:7:43:01 am
+ *TIME:30-Aug-2017
+ *TAGS:
+ */
+public class adharcard {
+	private String name;
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "adharcard [name=" + name + ", date=" + date + ", gender=" + gender + ", adres=" + adres + "]";
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#hashCode()
+	 */
+	
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+	/**
+	 * @return the date
+	 */
+	public int getDate() {
+		return date;
+	}
+	/**
+	 * @param i the date to set
+	 */
+	public void setDate(int i) {
+		this.date = i;
+	}
+	/**
+	 * @return the gender
+	 */
+	public String getGender() {
+		return gender;
+	}
+	/**
+	 * @param gender the gender to set
+	 */
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	/**
+	 * @return the adres
+	 */
+	public String getAdres() {
+		return adres;
+	}
+	/**
+	 * @param adres the adres to set
+	 */
+	public void setAdres(String adres) {
+		this.adres = adres;
+	}
+	private int date;
+	private String gender;
+	private String adres;
+
+}

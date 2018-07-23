@@ -1,0 +1,87 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package com.Map;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.Map.resp.responce1;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * DATE:7:40:00 am
+ *TIME:30-Aug-2017
+ *TAGS:
+ */
+public class simpleMapDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map<adharcard,details> map=new  HashMap();
+		adharcard g=new adharcard();
+		responce1 f=new responce1();
+		f(adhar(g));
+		/*prop p=new prop();
+		p.setBankBalance(9291822.d);
+		p.setLand(12.d);
+		p.setBusiness(true);*/
+		jobd();
+		land land=new land();
+		land.setLandType("farming type");
+		land.setTotalland(12.09f);
+		business business=new business();
+		business.setBcity("pune");
+		business.setBusineeType("hotel");
+		incomesource incom=new incomesource();
+		incom.setAnyaotherincomeSource("no");
+		vichel vv=new vichel();
+		vv.setVichelno(1232);
+		vv.setVichettype("fourviller");
+	details d= new details();
+		 d.setB(business);
+		
+
+
+		
+map.put(v, d);
+System.out.println(map);
+	}
+
+	/**
+	 * @param v
+	 */
+	/*private static void adhar(adharcard v) {
+		v.setName("irfan");
+		v.setGender("male");
+		v.setAdres("faradapur");
+		v.setDate(12/12/2000);
+	}*/
+
+	/**
+	 * @param g
+	 */
+	private static void adhar(adharcard g) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/**
+	 * @return 
+	 * 
+	 */
+	private static job jobd() {
+		job job=new job();
+		job.setJobtital("software engineer");
+		job.setCompany("GOOGLE");
+		job.setCity("NEW YOURK");
+		return job;
+	}
+
+}

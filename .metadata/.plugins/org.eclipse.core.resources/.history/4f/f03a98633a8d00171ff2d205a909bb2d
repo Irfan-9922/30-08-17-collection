@@ -1,0 +1,100 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package com.Map;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.Map.resp.responce1;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * DATE:7:40:00 am TIME:30-Aug-2017 TAGS:
+ */
+public class simpleMapDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map<adharcard, details> map = new HashMap();
+		adharcard v = adhar();
+		jobd();
+		land();
+		 business();
+		income();
+		vichel();
+		details d = new details();
+		d.setB(business());
+		d.setJob(jobd());
+
+		map.put(v, d);
+		System.out.println(map);
+	}
+
+	/**
+	 * 
+	 */
+	private static void vichel() {
+		vichel vv = new vichel();
+		vv.setVichelno(1232);
+		vv.setVichettype("fourviller");
+	}
+
+	/**
+	 * 
+	 */
+	private static void income() {
+		incomesource incom = new incomesource();
+		incom.setAnyaotherincomeSource("no");
+	}
+
+	/**
+	 * @return
+	 */
+	private static business business() {
+		business business = new business();
+		business.setBcity("pune");
+		business.setBusineeType("hotel");
+		return business;
+	}
+
+	/**
+	 * 
+	 */
+	private static void land() {
+		land land = new land();
+		land.setLandType("farming type");
+		land.setTotalland(12.09f);
+	}
+
+	/**
+	 * @return
+	 */
+	private static adharcard adhar() {
+		adharcard v = new adharcard();
+		v.setName("irfan");
+		v.setGender("male");
+		v.setAdres("faradapur");
+		v.setDate(12 / 12 / 2000);
+		return v;
+	}
+
+	/**
+	 * @return
+	 * 
+	 */
+	private static job jobd() {
+		job job = new job();
+		job.setJobtital("software engineer");
+		job.setCompany("GOOGLE");
+		job.setCity("NEW YOURK");
+		return job;
+	}
+
+}

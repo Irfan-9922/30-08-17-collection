@@ -1,0 +1,125 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package com.Map;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+import com.Map.resp.responce1;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * DATE:7:40:00 am TIME:30-Aug-2017 TAGS:
+ */
+public class simpleMapDemo {
+
+	/**
+	 * @param args
+	 */
+	public static Scanner ss=new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Map<adharcard, details> map = new HashMap();
+		adharcard v = adhar();
+		details d = details();
+		d.setB(business());
+		d.setJob(jobd());
+		d.setLand(land());
+		d.setIncome(income());
+		d.setV(vichel());
+
+		map.put(v, d);
+		System.out.println(map);
+	}
+
+	/**
+	 * @return
+	 */
+	private static details details() {
+		details d = new details();
+		return d;
+	}
+
+	/**
+	 * 
+	 */
+	private static vichel vichel() {
+		
+		vichel vv = new vichel();
+		System.out.println("enter the vichel no");
+		int vn=ss.nextInt();
+		vv.setVichelno(vn);
+		System.out.println("enter the vichel type");
+		String vt=ss.next();
+		vv.setVichettype(vt);
+		return vv;
+	}
+
+	/**
+	 * @param <incom>
+	 * 
+	 */
+	private static incomesource income() {
+		incomesource incom = new incomesource();
+		System.out.println("enter the income source");
+		String source=ss.next();
+		incom.setAnyaotherincomeSource(source);
+		return incom;
+	}
+
+	/**
+	 * @return
+	 */
+	private static business business() {
+		business business = new business();
+		System.out.println("enter the business details::");
+		System.out.println("enter the business city::");
+		String sity=ss.next();
+		business.setBcity(sity);
+		System.out.println("enter the business type::");
+		String bt=ss.next();
+		business.setBusineeType(bt);
+		return business;
+	}
+
+	/**
+	 * 
+	 */
+	private static land land() {
+		land land = new land();
+		land.setLandType("farming type");
+		land.setTotalland(12.09f);
+		return land;
+	}
+
+	/**
+	 * @return
+	 */
+	private static adharcard adhar() {
+		adharcard v = new adharcard();
+		v.setName("irfan");
+		v.setGender("male");
+		v.setAdres("faradapur");
+		v.setDate(12 / 12 / 2000);
+		return v;
+	}
+
+	/**
+	 * @return
+	 * 
+	 */
+	private static job jobd() {
+		job job = new job();
+		job.setJobtital("software engineer");
+		job.setCompany("GOOGLE");
+		job.setCity("NEW YOURK");
+		return job;
+	}
+
+}
